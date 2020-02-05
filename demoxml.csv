@@ -1,0 +1,10 @@
+﻿signature,protocol,source_ip,destination_ip,attack_type,Daytime
+ET DROP Dshield Block Listed Source group 1,TCP,185.156.73.57,172.31.81.74,misc-attack,Night
+ET DROP Dshield Block Listed Source group 1,TCP,198.108.67.99,172.31.81.74,misc-attack,Night
+ET DROP Dshield Block Listed Source group 1,TCP,185.176.27.34,172.31.81.74,misc-attack,Night
+ET DROP Dshield Block Listed Source group 1,TCP,83.97.20.49,172.31.81.74,misc-attack,Night
+ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 12,TCP,83.97.20.49,172.31.81.74,misc-attack,Night
+ET DROP Dshield Block Listed Source group 1,TCP,185.156.73.54,172.31.81.74,misc-attack,Night
+ET DROP Dshield Block Listed Source group 1,TCP,185.176.27.166,172.31.81.74,misc-attack,Night
+ET DROP Dshield Block Listed Source group 1,TCP,185.176.27.178,172.31.81.74,misc-attack,Night
+ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 12,TCP,83.97.20.49,172.31.81.74,misc-attack,Night
