@@ -127,7 +127,7 @@
                                         </div>
                                         
                                     </div>
-                                    <div id="sparkline-revenue"></div>
+                                    
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -139,7 +139,7 @@
                                         </div>
                                         
                                     </div>
-                                    <div id="sparkline-revenue2"></div>
+                                    
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -151,7 +151,7 @@
                                         </div>
                                         
                                     </div>
-                                    <div id="sparkline-revenue3"></div>
+                                    
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -163,7 +163,7 @@
                                         </div>
                                         
                                     </div>
-                                    <div id="sparkline-revenue4"></div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -174,32 +174,98 @@
 
                                           <!-- recent orders  -->
                             <!-- ============================================================== -->
-                            <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
+                            <div class="col-xl-8 col-lg-12 col-md-6 col-sm-12 col-12">
                                 <div class="card">
                                     <h5 class="card-header">Latest Events</h5>
-                                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
-                                    <script>
-                                        function arrayToTable(tableData) {
-                                            var table = $('<table></table>');
-                                            $(tableData).each(function (i, rowData) {
-                                                var row = $('<tr></tr>');
-                                                $(rowData).each(function (j, cellData) {
-                                                    row.append($('<td>'+cellData+'</td>'));
-                                                });
-                                                table.append(row);
-                                            });
-                                            return table;
-                                        }
-
-                                        $.ajax({
-                                            type: "GET",
-                                            url: "C:\Users\Admin\Desktop\concept-master\concept-master\demoxml.csv",
-                                            success: function (data) {
-                                                $('body').append(arrayToTable(Papa.parse(data).data));
-                                            }
-                                        });
-                                    </script>
+                                    <table class="table table-bordered table-hover table-condensed">
+        <thead><tr><th title="Field #1">Timestamp</th>
+        <th title="Field #2">Protocol</th>
+        <th title="Field #3">Source_ip</th>
+        <th title="Field #4">Source_port</th>
+        <th title="Field #5">Destination_port</th>
+        <th title="Field #6">Honeypot</th>
+        </tr></thead>
+    <tbody><tr>
+    <td>2020-01-14T03:47:19.426Z</td>
+    <td>TCP</td>
+    <td>190.56.17.186</td>
+    <td align="right">20386</td>
+    <td align="right">1433</td>
+    <td>snort</td>
+    </tr>
+    <tr>
+    <td>2020-01-14T03:47:16.426Z</td>
+    <td>TCP</td>
+    <td>83.97.20.49</td>
+    <td align="right">57522</td>
+    <td align="right">1967</td>
+    <td>snort</td>
+    </tr>
+    <tr>
+    <td>2020-01-14T03:47:14.426Z</td>
+    <td>TCP</td>
+    <td>185.176.27.178</td>
+    <td align="right">52434</td>
+    <td align="right">8814</td>
+    <td>snort</td>
+    </tr>
+    <tr>
+    <td>2020-01-14T03:45:56.425Z</td>
+    <td>TCP</td>
+    <td>185.176.27.166</td>
+    <td align="right">43337</td>
+    <td align="right">53701</td>
+    <td>snort</td>
+    </tr>
+    <tr>
+    <td>2020-01-14T03:44:58.429Z</td>
+    <td>TCP</td>
+    <td>185.156.73.54</td>
+    <td align="right">45725</td>
+    <td align="right">2707</td>
+    <td>snort</td>
+    </tr>
+    <tr>
+    <td>2020-01-14T03:41:53.071Z</td>
+    <td>TCP</td>
+    <td>83.97.20.49</td>
+    <td align="right">33043</td>
+    <td align="right">1962</td>
+    <td>snort</td>
+    </tr>
+    <tr>
+    <td>2020-01-14T03:41:53.064Z</td>
+    <td>TCP</td>
+    <td>83.97.20.49</td>
+    <td align="right">33043</td>
+    <td align="right">1962</td>
+    <td>snort</td>
+    </tr>
+    <tr>
+    <td>2020-01-14T03:41:49.065Z</td>
+    <td>TCP</td>
+    <td>185.176.27.34</td>
+    <td align="right">45293</td>
+    <td align="right">13883</td>
+    <td>snort</td>
+    </tr>
+    <tr>
+    <td>2020-01-14T03:41:33.066Z</td>
+    <td>TCP</td>
+    <td>198.108.67.99</td>
+    <td align="right">44275</td>
+    <td align="right">44300</td>
+    <td>snort</td>
+    </tr>
+    <tr>
+    <td>2020-01-14T03:41:32.064Z</td>
+    <td>TCP</td>
+    <td>185.156.73.57</td>
+    <td align="right">42494</td>
+    <td align="right">3421</td>
+    <td>snort</td>
+    </tr>
+    </tbody></table>
                                 </div>
                             </div>
                             <!-- ============================================================== -->
