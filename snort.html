@@ -1,134 +1,259 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+ 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		* {
-		  box-sizing: border-box;
-		}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/vendor/charts/chartist-bundle/chartist.css">
+    <link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
+</head>
 
-		body {
-		  font-family: Arial, Helvetica, sans-serif;
-		}
-
-		/* Float four columns side by side */
-		.column {
-		  float: left;
-		  width: 50%;
-		  padding: 0 10px;
-		}
-
-		/* Remove extra left and right margins, due to padding */
-		.row {margin: 0 -5px;}
-
-		/* Clear floats after the columns */
-		.row:after {
-		  content: "";
-		  display: table;
-		  clear: both;
-		}
-
-		/* Responsive columns */
-		@media screen and (max-width: 600px) {
-		  .column {
-		    width: 100%;
-		    display: block;
-		    margin-bottom: 20px;
-		  }
-		}
-
-		/* Style the counter cards */
-		.card {
-		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-		  padding: 16px;
-		  text-align: center;
-		  background-color: #f1f1f1;
-		}
-
-			h3{
-			  font-family: "Times New Roman", Times, serif;
-			}
-	</style>
-</head>	
 <body>
-	<h3>Snort visualization</h3>
-	<div class="container">
-	                                            
-	  <div class="dropdown">
-	    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
-	    <span class="caret"></span></button>
-	    <ul class="dropdown-menu">
-	      <li><a href="#">Last week</a></li>
-	      <li><a href="#">Last month</a></li>
-	      <li><a href="#">Last Year</a></li>
-	    </ul>
-	  </div>
-	</div>
-    </br>
-    </br>
-	<!--<div class="row">
-		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-        	<div class="card">
-            	<h5 class="card-header">1</h5>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            </nav>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider">
+                                Menu
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2">Visualization</a>
+                                <div id="submenu-2" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Snort.html">Snort</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Suricata.html">Suricata</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Cowrie.html">Cowrie</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Association.html">Association</a>
+                                
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="Clustering.html">Clustering</a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Classification.html">Classification</a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
-        <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 col-12">
-            <div class="card">
-                <h5 class="card-header">2</h5>
+        <!-- ============================================================== -->
+        <!-- end left sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- wrapper  -->
+        <!-- ============================================================== -->
+        <div class="dashboard-wrapper">
+            <div class="dashboard-ecommerce">
+                <div class="container-fluid dashboard-content ">
+                    <!-- ============================================================== -->
+                    <!-- pageheader  -->
+                    <!-- ============================================================== -->
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                                <h2 class="pageheader-title">Snort Visualization</h2>
+                                <p class="pageheader-text">Nulla euismod urna eros, sit amet scelerisque torton lectus vel mauris facilisis faucibus at enim quis massa lobortis rutrum.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Last week</a></li>
+                            <li><a href="#">Last month</a></li>
+                            <li><a href="#">Last Year</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    </br>
+                    </br>
+                    <!-- ============================================================== -->
+                    <!-- end pageheader  -->
+                    <!-- ============================================================== -->
+                    <div class="ecommerce-widget">
+
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Card 1</h5>
+                                        <div class="metric-value d-inline-block">
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Card 2</h5>
+                                        <div class="metric-value d-inline-block">
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>    
+
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Card 3</h5>
+                                        <div class="metric-value d-inline-block">
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Card 4</h5>
+                                        <div class="metric-value d-inline-block">
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>                            
+                        
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Card 5</h5>
+                                        <div class="metric-value d-inline-block">
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Card 6</h5>
+                                        <div class="metric-value d-inline-block">
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        
+                        
+                    </div>
+                </div>
             </div>
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            
+            <!-- ============================================================== -->
+            <!-- end footer -->
+            <!-- ============================================================== -->
         </div>
-    </div>-->
-    <div class="row">
-	  <div class="column">
-	    <div class="card">
-	      <h3>Card 1</h3>
-	      
-	    </div>
-	  </div>
-
-	  <div class="column">
-	    <div class="card">
-	      <h3>Card 2</h3>
-	      
-	    </div>
-	  </div>
-	</div>
-
-	</br>
-	<div class="row">
-	  <div class="column">
-	    <div class="card">
-	      <h3>Card 3</h3>
-	      
-	    </div>
-	  </div>
-
-	  <div class="column">
-	    <div class="card">
-	      <h3>Card 4</h3>
-	      
-	    </div>
-	  </div>
-	</div>
-	</br>
-	<div class="row">
-	  <div class="column">
-	    <div class="card">
-	      <h3>Card 5</h3>
-	      
-	    </div>
-	  </div>
-
-	  <div class="column">
-	    <div class="card">
-	      <h3>Card 6</h3>
-	      
-	    </div>
-	  </div>
-	</div>
+        <!-- ============================================================== -->
+        <!-- end wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end main wrapper  -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <!-- jquery 3.3.1 -->
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <!-- bootstap bundle js -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- slimscroll js -->
+    <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <!-- main js -->
+    <script src="assets/libs/js/main-js.js"></script>
+    <!-- chart chartist js -->
+    <script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+    <!-- sparkline js -->
+    <script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+    <!-- morris js -->
+    <script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+    <script src="assets/vendor/charts/morris-bundle/morris.js"></script>
+    <!-- chart c3 js -->
+    <script src="assets/vendor/charts/c3charts/c3.min.js"></script>
+    <script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+    <script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
+    <script src="assets/libs/js/dashboard-ecommerce.js"></script>
 </body>
+ 
 </html>
